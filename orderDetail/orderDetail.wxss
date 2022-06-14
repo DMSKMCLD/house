@@ -1,0 +1,104 @@
+.box{
+  width: 100%;
+  height: auto;
+}
+.nav{
+  width: 100%;
+  height: 350rpx;
+  background: #ccc;
+  border-radius: 50rpx;
+  margin-top: 10rpx;
+ position: relative;
+}
+.time{
+  width: 40%;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 25rpx;
+  background: orangered;
+  text-align: center;
+  margin-left: 2%;
+  color: white;
+}
+.more{
+  width: 20%;
+  height: 50rpx;
+  line-height: 50rpx;
+  position: absolute;
+  top: 0;
+  right: 2%;
+  border-radius: 25rpx;
+  text-align: center;
+  background: orangered;
+  color: white;
+}
+.showimg{
+  width: 40%;
+  height: 250rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: red;
+}
+.content{
+  width: 97%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  position: absolute;
+  right: 1%;
+  background: #F7F7F7;
+  border-radius: 25rpx;
+  font-size: 30rpx;
+  top: 50rpx;
+}
+.address{
+  width: 73%;
+  height: 100rpx;
+  text-align: center;
+  left: 2%;
+  position: absolute;
+  bottom: 95rpx;
+  background: #F7F7F7;
+  border-radius: 25rpx;
+  font-size: 30rpx;
+}
+.price{
+  width: 29%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  position: absolute;
+  left: 27%;
+  background: #F7F7F7;
+  border-radius: 25rpx;
+  font-size: 30rpx;
+  bottom: 10rpx;
+}
+.gender{
+  width: 25%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #F7F7F7;
+  position: absolute;
+  left: 14rpx;
+  bottom: 10rpx;
+  border-radius: 25rpx;
+  text-align: center;
+}
+.cancel{
+  position: absolute;
+  bottom: 135rpx;
+  right: 0;
+}
+.state{
+  width: 43%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #F7F7F7;
+  position: absolute;
+  right: 1%;
+  bottom: 10rpx;
+  border-radius: 25rpx;
+  text-align: center;
+}

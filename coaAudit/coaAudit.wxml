@@ -1,0 +1,13 @@
+<diynav isShow="{{isShow}}" navTitle="{{navTitle}}" backgroundColor="{{backgroundColor}}" isWhite="{{isWhite}}" pageNum="1" titleColor="{{titleColor}}"></diynav>
+<view class='box'>
+<image wx:if="{{pdimg}}" src="../../icon/noinfor.png" mode="widthFix" class="back"></image>
+  <block wx:for="{{list}}" wx:key="this">
+   <view class="list">
+     <view class="time">{{item.submitTime}}</view>
+     <view class="name">名字:{{item.realName}}</view>
+     <view class="phone">电话:{{item.realPhone}}</view>
+     <view class="position">电话:{{item.position}}</view>
+     <van-button class="more" type="primary" size="normal" bindtap="detail" data-id="{{item._id}}">详情按钮</van-button>
+   </view>
+  </block>
+</view>

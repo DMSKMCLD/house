@@ -1,0 +1,26 @@
+<diynav isShow="{{isShow}}" navTitle="{{navTitle}}" backgroundColor="{{backgroundColor}}" isWhite="{{isWhite}}" pageNum="1" titleColor="{{titleColor}}"></diynav>
+<view class='box'>
+  <van-dropdown-menu>
+    <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" bind:change="fgoods"/>
+    <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" bind:change="sgoods"/>
+  </van-dropdown-menu>
+  <view class="content">
+    <block wx:for="{{lister}}" wx:key="this">
+      <view class="list">
+        <view class="name">名字:{{item.goodsName}}</view>
+        <view class="img">
+          <block wx:for="{{item.goodsPic}}" wx:key="this">
+            <image src="{{item}}"></image>
+          </block>
+        </view>
+        <view class="intro">简介:{{item.goodsDesc}}</view>
+        <view class="price">价格:{{item.goodsPrice}}</view>
+        <view class="sales">销量:{{item.goodsSalesVolume}}</view>
+        <view class="fennei">分类:{{item.goodsType}}</view>
+        <van-button type="primary" size="normal" class="amend" bindtap="amend" data-id="{{item._id}}">修改物品</van-button>
+        <van-button type="primary" size="normal" class="remove" bindtap="remove" data-id="{{item._id}}">删除物品</van-button>
+      </view>
+    </block>
+  </view>
+  <van-button type="primary" size="large" class="add" bindtap="add">增加物品</van-button>
+</view>

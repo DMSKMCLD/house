@@ -1,0 +1,105 @@
+.box{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.content{
+  box-shadow: border-box;
+  margin-bottom: 100rpx;
+}
+.add{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.list{
+  width: 100%;
+  height: 480rpx;
+  background: #ccc;
+  margin-top: 20rpx;
+  position: relative;
+  border-radius: 50rpx;
+}
+.name{
+  width: 100%;
+  height: 75rpx;
+  line-height: 75rpx;
+  text-align: center;
+  background: #ffaf91;
+  border-top-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  color: white;
+  font-size:30rpx;
+}
+.img{
+  width: 60%;
+  height: 200rpx;
+  background:white;
+  text-align: center;
+}
+.img>image{
+  width: 50%;
+  height: 200rpx;
+  float: left;
+  /* background: plum; */
+}
+.intro{
+  width: 60%;
+  height: 100rpx;
+  text-align: center;
+  background: #fcfcfc;
+  position: absolute;
+  top: 275rpx;
+  left: 0;
+  border-radius: 30rpx;
+  color:orangered;
+  font-size: 30rpx;
+}
+.price{
+  background: white;
+  width: 40%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  position: absolute;
+  top: 75rpx;
+  right: 0;
+  border-radius: 30rpx;
+  color: orangered;
+}
+.sales{
+  width: 40%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  position: absolute;
+  top: 175rpx;
+  right: 0;
+  background: white;
+  color: orangered;
+  border-radius: 30rpx;
+}
+.fennei{
+  width: 40%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  position: absolute;
+  top: 275rpx;
+  right: 0;
+  background: white;
+  color: orangered;
+  border-radius: 30rpx;
+}
+.amend{
+  position: absolute;
+  left: 20%;
+  bottom: 10rpx;
+}
+.remove{
+  position: absolute;
+  left: 60%;
+  bottom: 10rpx;
+}
+

@@ -1,0 +1,14 @@
+<diynav isShow="{{isShow}}" navTitle="{{navTitle}}" backgroundColor="{{backgroundColor}}" isWhite="{{isWhite}}" pageNum="1" titleColor="{{titleColor}}"></diynav>
+<view class='box'>
+<block wx:for="{{lists}}" wx:key="this">
+  <view class="list">
+     <view class="time">时间:{{item.payTime}}</view>
+     <view class="detail" data-id="{{item._id}}" bindtap="navdetail">详情</view>
+     <view class="name">客户名字:{{item.name}}</view> 
+     <view class="phone">客户电话:{{item.tel}}</view>
+     <view class="address">客户地址:{{item.address}}</view>
+     <view class="pay">支付方式:{{item.payType}}</view>
+     <view class="state">订单状态:{{item.orderState[item.orderState.length-1].status}}</view>
+   </view>
+   </block>
+</view>

@@ -1,0 +1,40 @@
+.box{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.show{
+  width: 100%;
+  height: 100rpx;
+  background: #e4e4e4;
+  margin-top: 10rpx;
+  position: relative;
+}
+.url{
+  width: 14%;
+  height: 100rpx;
+}
+.img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50rpx;
+}
+.name{
+  width: 30%;
+  height: 100rpx;
+  line-height: 100rpx;
+  position: absolute;
+  left: 14%;
+  top: 0;
+  color: orangered;
+}
+.integral{
+  color: orangered;
+  width: 56%;
+  text-align: center;
+  height: 100rpx;
+  /* line-height: 100rpx; */
+  position: absolute;
+  top: 0;
+  right: 0;
+}

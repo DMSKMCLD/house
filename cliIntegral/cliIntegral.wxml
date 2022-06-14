@@ -1,0 +1,12 @@
+<diynav isShow="{{isShow}}" navTitle="{{navTitle}}" backgroundColor="{{backgroundColor}}" isWhite="{{isWhite}}" pageNum="1" titleColor="{{titleColor}}"></diynav>
+<view class='box'>
+  <block wx:for="{{lister}}" wx:key="this">
+    <view class="show">
+    <view class="url">
+      <image class="img" src="{{item.avatarUrl}}" alt="" />
+      </view>
+      <view class="name">{{item.nickName}}</view>
+      <view class="integral">当前积分:{{item.userIntegral}}</view>
+    </view>
+  </block>
+</view>

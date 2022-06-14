@@ -1,0 +1,75 @@
+.box{
+  width: 100%;
+  height: auto;
+}
+.orderitem{
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+}
+.infor{
+  width: 95%;
+  height: 230rpx ;
+  margin: 0 auto;
+  position: relative;
+  outline: 3rpx solid #ff8247;
+  margin-bottom: 20rpx;
+}
+.inforintro{
+  width: 100%;
+  height: 75rpx;
+  line-height: 75rpx;
+  color: orangered;
+  text-align: center;
+}
+.inforimg{
+  width: 30%;
+  height: 150rpx;
+}
+.inforimg>image{
+  width: 100%;
+  height: 100%;
+}
+.infornum{
+  width: 70%;
+  height: 75rpx;
+  position: absolute;
+  right: 0;
+  bottom: 75rpx;
+  text-align: center;
+  color: orangered;
+}
+.inforprice{
+  width: 70%;
+  height: 75rpx;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  color: orangered;
+}
+.pop{
+  width: 100%;
+  height: 500rpx;
+}
+.logisticsinfor{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  outline: 3rpx solid black;
+  text-align: center;
+}
+.logbus{
+  width: 100%;
+  height: 100rpx;
+  outline: 3rpx solid black;
+  text-align: center;
+}
+.logisticsinfor{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  outline: 3rpx solid black;
+  text-align: center;
+}

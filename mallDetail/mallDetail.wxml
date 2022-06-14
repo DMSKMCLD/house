@@ -1,0 +1,35 @@
+<diynav isShow="{{isShow}}" navTitle="{{navTitle}}" backgroundColor="{{backgroundColor}}" isWhite="{{isWhite}}" pageNum="1" titleColor="{{titleColor}}"></diynav>
+<view class="box">
+  <van-cell-group>
+    <van-cell title="下单时间" value="{{list.payTime}}" />
+    <van-cell title="客户名字" value="{{list.name}}" />
+    <van-cell title="客户电话" value="{{list.tel}}" />
+    <van-cell title="下单地址" value="{{list.address}}" />
+    <van-cell title="支付方式" value="{{list.payType}}" />
+    <van-cell title="订单总价" value="{{list.orderTotalPrice}}元" />
+    <van-cell title="订单备注" value="{{list.remarks}}" />
+  </van-cell-group>
+  <view class="orderitem">下单物品</view>
+  <block wx:for="{{list.goodsList}}" wx:key="this">
+    <view class="infor">
+      <view class="inforintro">{{item.goodsName}}</view>
+      <view class="inforimg">
+        <image src="{{item.goodsImage}}"></image>
+      </view>
+      <view class="infornum">物品数量:{{item.goodsNum}}</view>
+      <view class="inforprice">物品单价:{{item.goodsPrice}}元</view>
+    </view>
+  </block>
+  <van-cell-group>
+    <van-cell title="订单状态" value="{{list.orderState[list.orderState.length-1].status}}" />
+    <van-cell title="状态时间" value="{{list.orderState[list.orderState.length-1].time}}" />
+    <van-cell wx:if="{{panduan}}" title="物流商家" value="{{list.LogBusiness}}" />
+    <van-cell wx:if="{{panduan}}" title="物流单号" value="{{list.LogNumber}}" />
+  </van-cell-group>
+  <van-button type="primary" size="large" bindtap="{{bind}}" disabled="{{pd}}">商家已发货</van-button>
+  <van-dialog use-slot title="请输入物流信息" show="{{ shows }}" show-cancel-button show-confirm-button bind:close="onClose" bind:confirm="getUserInf">
+   <input type="text" style="text-align: center;outline: 1rpx solid black;width: 100%;height: 100rpx;" placeholder="请输入物流名称" value="{{courier}}" bindchange="kuaidi"/>
+   <input type="text" style="text-align: center;outline: 1rpx solid black;width: 100%;height: 100rpx;" placeholder="请输入物流单号" value="{{odd}}" bindchange="danhao"/>
+  </van-dialog>
+
+</view>

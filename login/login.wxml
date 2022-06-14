@@ -1,0 +1,6 @@
+<view class="box">
+ <image class="back" src="../../icon/back.png" ></image>
+ <van-button bindtap="loginwe" type="primary" size="large" color="orangered" class="login" 
+  open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">微信登录</van-button>
+</view>
+

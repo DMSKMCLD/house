@@ -1,0 +1,59 @@
+<diynav isShow="{{isShow}}" navTitle="{{navTitle}}" backgroundColor="{{backgroundColor}}" isWhite="{{isWhite}}" pageNum="1" titleColor="{{titleColor}}"></diynav>
+<view class='box'>
+  <van-cell-group>
+    <van-cell title="帖子时间" value="{{maincontent.postTime}}" />
+    <van-cell title="发布人名字" value="{{maincontent.posterInfo.nickName}}" />
+  </van-cell-group>
+  <view class="release">
+    <view>发布人头像</view>
+    <image src="{{maincontent.posterInfo.avatarUrl}}"></image>
+  </view>
+  <van-cell-group>
+    <van-cell title="帖子热度" value="{{maincontent.postHots}}" />
+    <van-cell title="帖子状态" value="{{maincontent.postStatus}}" />
+    <van-cell title="帖子内容" value="{{maincontent.textValue}}" />
+    <van-cell title="帖子标签" value="{{label}}" />
+  </van-cell-group>
+  <view class="detail">
+    <view>帖子图片</view>
+    <view>
+      <block wx:for="{{maincontent.fileList}}" wx:key="this">
+        <image src="{{item}}" bindtap="getimage"></image>
+      </block>
+    </view>
+  </view>
+  <van-cell-group>
+    <van-cell title="帖子评论数" value="{{maincontent.commentNum}}" />
+  </van-cell-group>
+  <view class="comments">
+    <view>评论内容</view>
+    <block wx:for="{{maincontent.postComment}}" wx:key="this">
+    <view class="comlist">
+      <view>
+        <van-cell-group inset>
+          <van-cell title="评论时间" value="{{item.commentTime}}" />
+          <van-cell title="评论内容" value="{{item.commentText}}" />
+          <van-cell title="评论者" value="{{item.commenter}}" />
+        </van-cell-group>
+        <view class="cominfor">
+          <view>评论者头像</view>
+          <image src="{{item.commenterAvatarUrl}}"></image>
+        </view>
+        <view>
+          <block wx:for="{{item.replyInfo}}" wx:key="this">
+            <van-cell-group inset>
+              <van-cell title="回复时间" value="{{item.replyTime}}" />
+              <van-cell title="回复内容" value="{{item.replyText}}" />
+              <van-cell title="回复者" value="{{item.replyer}}" />
+            </van-cell-group>
+            <view class="cominfor">
+              <view>回复者头像</view>
+              <image src="{{item.replyAvatarUrl}}"></image>
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+    </block>
+  </view>
+</view>

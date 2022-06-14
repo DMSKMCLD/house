@@ -1,0 +1,30 @@
+<diynav isShow="{{isShow}}" navTitle="{{navTitle}}" backgroundColor="{{backgroundColor}}" isWhite="{{isWhite}}" pageNum="1" titleColor="{{titleColor}}"></diynav>
+<view class="box">
+  <van-cell-group>
+    <van-field value="{{lister.commentTime}}" label="评价时间" placeholder="信息为空" autosize border="{{ false }}" readonly="true" type="textarea" />
+    <van-field value="{{lister.commentType }}" label="评价类型" placeholder="信息为空" autosize border="{{ false }}" readonly="true" type="textarea" />
+    <van-field value="{{lister.level}}" label="评价等级" placeholder="信息为空" autosize border="{{ false }}" readonly="true" type="textarea" />
+    <van-field value="{{ lister.text }}" label="评价内容" placeholder="信息为空" autosize border="{{ false }}" readonly="true" type="textarea" />
+    <van-field wx:if="{{kecheng}}" value="{{lister.courseName}}" label="课程名字" placeholder="信息为空" autosize border="{{ false }}" readonly="true" type="textarea" />
+    <van-field wx:if="{{kecheng}}" value="{{lister.finishNum}}" label="完成节数" placeholder="信息为空" autosize border="{{ false }}" readonly="true" type="textarea" />
+    <van-field wx:if="{{jiaolian}}" value="{{tag}}" label="评价标签" placeholder="信息为空" autosize border="{{ false }}" readonly="true" type="textarea" />
+    <van-field wx:if="{{jiaolian}}" value="{{lister.coachInfo.name}}" label="教练名字" placeholder="信息为空" autosize border="{{ false }}" readonly="true" type="textarea" />
+  </van-cell-group>
+  <view class="userInfo">
+    <view class="infor">客户信息</view>
+    <view class="infoname">
+      微信名:{{lister.commenterInfo.nickName}}
+    </view>
+    <view class="infoimg">
+      <view>微信头像:</view>
+      <image src="{{lister.commenterInfo.avatarUrl}}"></image>
+    </view>
+  </view>
+  <view class="pic">
+    <view>评价图片</view>
+    <block wx:for="{{lister.picList}}" wx:key="this">
+      <image src="{{item}}" bindtap="yulan"></image>
+    </block>
+  </view>
+  <van-button type="primary" block class="remove" bindtap="remove">删除评价</van-button>
+</view>

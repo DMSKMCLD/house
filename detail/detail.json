@@ -1,0 +1,11 @@
+{
+  "component": true,
+  "navigationBarTitleText": "列表下拉刷新",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#d3d3d3",
+  "usingComponents": {
+    "van-cell": "../../miniprogram_npm/@vant/weapp/cell/index",
+    "van-cell-group": "../../miniprogram_npm/@vant/weapp/cell-group/index",
+    "van-image": "../../miniprogram_npm/@vant/weapp/image/index"
+  }
+}

@@ -1,0 +1,155 @@
+.box{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.nav{
+  width: 100%;
+  height: 101rpx;
+}
+.lists{
+  width: 100%;
+  height: auto;
+}
+.list{
+  border-radius: 50rpx;
+  margin: 30rpx auto 0rpx;
+  width: 98%;
+  height: 617rpx;
+  background: #ff7f50;
+  position: relative;
+  color: black;
+}
+.time{
+  margin-left: 2%;
+  width: 50%;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 15rpx;
+  text-align: center;
+  border-radius: 66rpx;
+  background: #f0f0f0;
+}
+.more{
+  width: 20%;
+  height: 50rpx;
+  line-height: 50rpx;
+  background: white;
+  position: absolute;
+  right: 3%;
+  top: 0;
+  text-align: center;
+  border-radius: 20rpx;
+}
+.detail{
+  width: 100%;
+  height: 378rpx;
+  position: relative;
+}
+.detimg{
+  width: 100%;
+  height: 200rpx;
+  text-align: center;
+  outline: 3rpx solid #ee9572;
+}
+.detimgs{
+  border: 1rpx solid orange;
+  color: cornsilk;
+  width: 100%;
+  height: 30rpx;
+  line-height: 30rpx;
+  text-align: center;
+  border-radius: 20rpx;
+}
+.detimg>image{
+  height: 170rpx;
+  float: left;
+  outline: 1rpx solid #ff8c69;
+}
+.detcon{
+  width: 70%;
+  height: 100rpx;
+  line-height: 100rpx;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+.detlabel{
+  width: 30%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 26rpx;
+}
+.infor{
+  position: absolute;
+  width: 76%;
+  height: 188rpx;
+  left: 0;
+  bottom: 0;
+}
+.inforavt{
+  text-align: center;
+  width: 26%;
+  height: 178rpx;
+  position: absolute;
+  left: 1%;
+  bottom: 10rpx;
+  font-size: 28rpx;
+}
+.inforavt>image{
+  border-radius: 68rpx;
+  width: 100%;
+  height: 136rpx;
+  position: absolute;
+  left: 0;
+  bottom: 0; 
+}
+.inforname{
+  width: 100%;
+  border-radius: 20rpx;
+  background: #f2f2f2;
+  height: 89rpx;
+  line-height: 89rpx;
+  position: absolute;
+  left: 29%;
+  top: 0;
+  text-align: center;
+}
+.inforstate{
+  position: absolute;
+  width: 67%;
+  height: 85rpx;
+  background: #f0f0f0;
+  text-align: center;
+  line-height: 85rpx;
+  right: 4%;
+  bottom: 10rpx;
+  border-radius: 24rpx;
+}
+.inforstates{
+  position: absolute;
+  width: 37%;
+  height: 85rpx;
+  background: #f0f0f0;
+  text-align: center;
+  line-height: 85rpx;
+  right: 35%;
+  bottom: 12rpx;
+  border-radius: 15rpx;
+  font-size: 28rpx;
+}
+.remove{
+  position: absolute;
+  right: 3%;
+  bottom: 10rpx;
+}
+.choose{
+  position: absolute;
+  right: 27%;
+  bottom: 10rpx;
+}

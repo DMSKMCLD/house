@@ -1,0 +1,18 @@
+.box{
+  width: 100%;
+  height: auto;
+}
+.nowall{
+  width: 100%;
+  height: 98rpx;
+  line-height: 91rpx;
+  color: white;
+  background: orangered;
+  text-align: center;
+  position: relative;
+}
+.dongjie{
+  position: absolute;
+  right: 0;
+  top: 0;
+}

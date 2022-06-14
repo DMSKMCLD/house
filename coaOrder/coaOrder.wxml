@@ -1,0 +1,11 @@
+<diynav isShow="{{isShow}}" navTitle="{{navTitle}}" backgroundColor="{{backgroundColor}}" isWhite="{{isWhite}}" pageNum="1" titleColor="{{titleColor}}"></diynav>
+<view class='box'>
+  <block wx:for="{{list}}" wx:key="this">
+   <view class="nav">
+    <image class="img" src="{{item.wechatImg}}"></image>
+    <view class="name">{{item.wechatName}}</view> 
+    <view class="realname">姓名:{{item.realName}}</view>
+    <van-button type="primary" size="normal" class="all" data-openid="{{item.openId}}" bindtap="all">所有订单</van-button>
+   </view>
+  </block>
+</view>

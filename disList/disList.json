@@ -1,0 +1,12 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-dropdown-menu": "../../miniprogram_npm/@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "../../miniprogram_npm/@vant/weapp/dropdown-item/index",
+    "van-button": "../../miniprogram_npm/@vant/weapp/button/index",
+    "van-field": "../../miniprogram_npm/@vant/weapp/field/index"
+  },
+  "navigationBarTitleText": "列表下拉刷新",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#d3d3d3"
+}

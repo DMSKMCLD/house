@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {},
+  "navigationBarTitleText": "列表下拉刷新",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#d3d3d3"
+}

@@ -1,0 +1,23 @@
+.box{
+  height: auto;
+  width: 100%;
+}
+.one{
+  height: 130rpx;
+  line-height: 130rpx;
+  margin-top: 25rpx;
+  text-align: center;
+  font-size: 25rpx;
+  background: -webkit-linear-gradient(left,skyblue,lightblue,rgb(248, 159, 174));
+  color: white;
+}
+#tubiao{
+  font-size: 70rpx;
+  box-shadow:8rpx 8rpx 7rpx 5rpx #ff6633;
+}
+.name{
+  width: 110%;
+  text-align: center;
+  color: #ff6633;
+  margin-top: 20rpx;
+}

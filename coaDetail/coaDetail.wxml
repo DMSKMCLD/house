@@ -1,0 +1,45 @@
+<diynav isShow="{{isShow}}" navTitle="{{navTitle}}" backgroundColor="{{backgroundColor}}" isWhite="{{isWhite}}" pageNum="1" titleColor="{{titleColor}}"></diynav>
+<view class="box">
+  <van-cell-group>
+    <van-field value="{{list.realName}}" label="真实姓名" disabled input-align="right" />
+    <van-field value="{{list.realGender}}" label="性别" disabled input-align="right" />
+    <van-field value="{{list.realHeight}}" label="身高" disabled input-align="right" />
+    <van-field value="{{list.realWeight}}" label="体重" disabled input-align="right" />
+    <van-field value="{{list.realBirthDate}}" label="出生年月" disabled input-align="right" />
+    <van-field value="{{list.realPhone}}" label="电话号码" disabled input-align="right" />
+    <van-field value="{{list.idNumber}}" label="身份证号" disabled input-align="right" />
+    <van-field value="{{list.position}}" label="工作种类" disabled input-align="right" />
+    <van-field value="{{list.serviceType}}" label="服务人群" disabled input-align="right" />
+    <van-field value="{{list.realLocation}}" label="现居地" disabled input-align="right" />
+    <van-field value="{{list.workLocation}}" label="工作地" disabled input-align="right" />
+    <van-field value="{{course}}" label="从业课程" disabled input-align="right" />
+    <van-field value="{{list.employedAge}}" label="从业时间" disabled input-align="right" />
+    <van-field value="{{list.submitTime}}" label="提交时间" disabled input-align="right" />
+  </van-cell-group>
+  <view class="idcard">
+    <text>身份证图片</text>
+    <view class="cardimg">
+      <block wx:for="{{list.idCard}}" wx:key="this">
+        <image bindtap="idimg" src="{{item}}"></image>
+      </block>
+    </view>
+  </view>
+  <view class="idcards">
+    <text>自我展示图</text>
+    <view class="cardimgs">
+      <block wx:for="{{list.introduceImg}}" wx:key="this">
+        <image bindtap="idimgs" src="{{item}}"></image>
+      </block>
+    </view>
+  </view>
+  <view class="idcard">
+    <text>证书图片</text>
+    <view class="cardimg">
+      <block wx:for="{{list.realCert}}" wx:key="this">
+        <image bindtap="idimges" src="{{item}}"></image>
+      </block>
+    </view>
+  </view>
+  <van-button class="through" bindtap="through" type="primary" size="large">通过审核</van-button>
+  <van-button class="rejected" bindtap="rejected" type="primary" size="large">驳回审核</van-button>
+</view>

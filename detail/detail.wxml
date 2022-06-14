@@ -1,0 +1,30 @@
+<diynav isShow="{{isShow}}" navTitle="{{navTitle}}" backgroundColor="{{backgroundColor}}" isWhite="{{isWhite}}" pageNum="1" titleColor="{{titleColor}}"></diynav>
+<view class='box'>
+  <van-cell-group >
+    <van-cell  title="订单编号" value="{{contant._id}}" />
+    <van-cell title="客户名字" value="{{contant.clientName}}" />
+    <van-cell title="客户电话" value="{{contant.clientPhone}}" />
+    <van-cell title="客户性别" value="{{contant.clientGender}}" />
+    <van-cell title="订单地址" value="{{contant.orderAddress}}" />
+    <van-cell title="订单课程" value="{{contant.orderCourse}}" />
+    <van-cell title="订单价格" value="{{contant.orderPrice}}" />
+    <van-cell style="display: {{price}};" title="盈利总价" value="{{contant.orderPrice}}" />
+    <van-cell style="display: {{price}};" title="教练价格" value="{{coachprice}}" />
+
+    <van-cell title="订单时间" value="{{contant.orderTime}}" />
+    <van-cell title="订单类型" value="{{contant.orderType}}" />
+    <van-cell title="教练姓名" value="{{coachname}}" />
+    <van-cell title="教练电话" value="{{coachphone}}" />
+    <van-cell title="订单备注" value="{{contant.clientNote}}" />
+    <van-cell title="教练订单状态" value="{{contant.makeSure[contant.makeSure.length-1]}}" />
+    <van-cell title="客户订单状态" value="{{contant.orderState[contant.orderState.length-1]}}" />
+    <van-cell wx:if="{{ordereva}}" title="订单评价" value="{{contant.clientEvaluation}}" />
+    <van-cell wx:if="{{ordertext}}" title="评价文字" value="{{contant.clientEvatext}}" />
+  </van-cell-group>
+  <view class="imgs" wx:if="{{orderimg}}">
+    <text>评价图片</text>
+    <block>
+    <image src="{{contant.clientEvaimg}}"></image>
+    </block>
+  </view>
+</view>

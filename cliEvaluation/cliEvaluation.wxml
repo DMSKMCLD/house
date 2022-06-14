@@ -1,0 +1,18 @@
+<diynav isShow="{{isShow}}" navTitle="{{navTitle}}" backgroundColor="{{backgroundColor}}" isWhite="{{isWhite}}" pageNum="1" titleColor="{{titleColor}}"></diynav>
+<view class="box">
+<view class="nav">
+  <van-dropdown-menu>
+   <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" bind:change="first"/>
+   <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" bind:change="second"/>
+</van-dropdown-menu>
+</view>
+<block wx:for="{{lister}}" wx:key="this">
+    <view class="main">
+      <view class="time">{{item.commentTime}}</view>
+      <view class="more" bindtap="navdetail" data-id="{{item._id}}">详情</view>
+      <view class="content">评论内容:{{item.text}}</view>
+      <view class="level">评价级别:{{item.level}}</view>
+      <view class="type">评价类型:{{item.commentType}}</view>
+    </view>
+  </block>
+</view>

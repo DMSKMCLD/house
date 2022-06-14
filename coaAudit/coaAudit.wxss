@@ -1,0 +1,72 @@
+.box{
+  width: 100%;
+  height: auto;
+}
+.back{
+  width: 100%;
+}
+.list{
+  width: 100%;
+  height: 270rpx;
+  background: #ccc;
+  position: relative;
+  margin-top: 5rpx;
+}
+.time{
+  width: 35%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: orangered;
+  border-radius: 15rpx;
+  color: white;
+  text-align: center;
+}
+.position{
+  width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 90rpx;
+  background: white;
+  border-radius: 25rpx;
+  color: orangered;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.name{
+  width: 50%;
+  background: white;
+  color: orangered;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  position: absolute;
+  left: 0;
+  bottom: 90rpx;
+  border-radius: 25rpx;
+
+}
+.phone{
+  width: 100%;
+  background: white;
+  color: orangered;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  position: absolute;
+  right: 0;
+  bottom: 7rpx;
+  border-radius: 25rpx;
+}
+.more{
+  /* width: 20%;
+  height: 80rpx;
+  line-height: 80rpx; */
+  /* background: white;
+  border-radius: 15rpx;
+  color: oranged;
+  text-align: center; */
+  position: absolute;
+  right: 0;
+  top: 0;
+}

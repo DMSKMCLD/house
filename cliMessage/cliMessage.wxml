@@ -1,0 +1,17 @@
+<diynav isShow="{{isShow}}" navTitle="{{navTitle}}" backgroundColor="{{backgroundColor}}" isWhite="{{isWhite}}" pageNum="1" titleColor="{{titleColor}}"></diynav>
+<view class='box'>
+  <block wx:for="{{lister}}" wx:key="this">
+    <view class="list">
+      <view class="img">
+        <image src="{{item.avatarUrl}}"></image>
+      </view>
+      <view class="name">用户名字:{{item.nickName}}</view>
+      <view class="phone">手机号:{{item.tel}}</view>
+      <van-button type="primary" size="normal" bindtap="dongjie" class="dongjie">冻结余额</van-button>
+        <van-button wx:if="{{item.freeze}}" type="primary" size="normal" bindtap="jiedong" class="dongjie">解冻余额</van-button>
+        <view class="reason" wx:if="{{item.freeze}}">{{item.freezeReason}}</view>
+      <view class="money">账上余额:{{item.cardBalance}}</view>
+      <view class="level">用户等级:{{item.userLevel}}</view>
+    </view>
+  </block>
+</view>

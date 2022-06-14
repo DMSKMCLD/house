@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {},
+  "navigationBarTitleText": "列表下拉刷新",
+  "onReachBottomDistance": 20,
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#d3d3d3"
+}

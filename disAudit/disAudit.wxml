@@ -1,0 +1,29 @@
+<diynav isShow="{{isShow}}" navTitle="{{navTitle}}" backgroundColor="{{backgroundColor}}" isWhite="{{isWhite}}" pageNum="1" titleColor="{{titleColor}}"></diynav>
+<view class='box'>
+  <image src="../../icon/nodata.png" mode="widthFix" class="nodata" wx:if="{{bottompage}}"></image>
+  <block wx:for="{{list}}" wx:key="this">
+    <view class="list">
+      <view class="time">{{item.postTime}}</view>
+      <view class="detail">
+        <view class="detimg">
+          <view class="detimgs">帖子图片</view>
+          <block wx:for="{{item.fileList}}" wx:key="this">
+            <image bindtap="clickimg" style="width:{{imgwidth}};" src="{{item}}" data-img="{{item}}"></image>
+          </block>
+        </view>
+        <van-cell-group>
+          <van-field value="{{item.textValue }}" label="内容" type="textarea" placeholder="请输入留言" autosize readonly border="{{ false }}" />
+          <van-field value="{{item.topicList}}" label="标签" readonly border="{{ false }}" />
+        </van-cell-group>
+      </view>
+      <view class="infor">
+        <view class="inforavt">发布人头像
+          <image src="{{item.posterInfo.avatarUrl}}"></image>
+        </view>
+        <view class="inforname">发布人名字:{{item.posterInfo.nickName}}</view>
+      </view>
+      <van-button type="primary" size="normal" class="through" bindtap="through" data-id="{{item._id}}">通过审核</van-button>
+      <van-button type="primary" size="normal" class="rejected" bindtap="rejected" data-id="{{item._id}}">驳回审核</van-button>
+    </view>
+  </block>
+</view>

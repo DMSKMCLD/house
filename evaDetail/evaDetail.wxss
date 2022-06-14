@@ -1,0 +1,70 @@
+.boxx{
+  width: 100%;
+  height: auto  ;
+}
+.pic{
+  width: 100%;
+  height: auto;
+  outline: 1rpx solid black;
+}
+.pic>view{
+  width: 100%;
+  height: 75rpx;
+  line-height: 75rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+.pic>image{
+  width: 25%;
+  height: 200rpx;
+  float: left;
+  /* outline: 1rpx solid orangered; */
+}
+.userInfo{
+  width: 100%;
+  height: 175rpx;
+  outline:1rpx solid black ;
+  position: relative;
+}
+.infor{
+  width: 100%;
+  height: 75rpx;
+  line-height: 75rpx;
+  text-align: center;
+}
+.infoname{
+  width: 40%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background: coral;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+}
+.infoimg{
+  width: 60%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: cornflowerblue;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  color: white;
+}
+.infoimg>image{
+  width: 23%;
+  height: 100rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius:50rpx;
+}
+.remove{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

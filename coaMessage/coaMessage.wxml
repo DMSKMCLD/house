@@ -1,0 +1,14 @@
+<diynav isShow="{{isShow}}" navTitle="{{navTitle}}" backgroundColor="{{backgroundColor}}" isWhite="{{isWhite}}" pageNum="1" titleColor="{{titleColor}}"></diynav>
+<view class='box'>
+<block wx:for="{{list}}" wx:key="this"> 
+   <view class="nav">
+     <view class="wxname">微信名:{{item.wechatName}}</view>
+     <view class="wximg">
+     <image src="{{item.wechatImg}}"></image></view>
+     <van-button type="primary" size="normal" class="more" bindtap="more" color="linear-gradient(to right, #4bb0ff, #6149f6)" data-openid="{{item.openId}}">更多信息</van-button>
+     <view class="phone">电话号码:{{item.realPhone}}</view>
+     <view class="name">真实姓名:{{item.realName}}</view>
+     <view class="position">从业类型:{{item.position}}</view>
+   </view>
+  </block>
+</view>

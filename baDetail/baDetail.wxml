@@ -1,0 +1,14 @@
+<diynav isShow="{{isShow}}" navTitle="{{navTitle}}" backgroundColor="{{backgroundColor}}" isWhite="{{isWhite}}" pageNum="1" titleColor="{{titleColor}}"></diynav>
+<view class="box">
+  <view class="nowall">当前账上余额为{{list[0].totalPrice}}元
+  <van-button wx:if="{{dongjie}}" type="primary" size="normal" class="dongjie" bindtap="dongjie">冻结余额</van-button>
+  <van-button wx:if="{{jiedong}}" type="primary" size="normal" class="dongjie" bindtap="jiedong">解冻余额</van-button>
+  </view>
+  <view>
+    <van-cell-group>
+      <block wx:for="{{list}}" wx:key="this">
+        <van-cell title="{{item.changeReason}}" value="{{item.changePrice}}" />
+      </block>
+    </van-cell-group>
+  </view>
+</view>

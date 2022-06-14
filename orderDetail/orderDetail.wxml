@@ -1,0 +1,14 @@
+<diynav isShow="{{isShow}}" navTitle="{{navTitle}}" backgroundColor="{{backgroundColor}}" isWhite="{{isWhite}}" pageNum="1" titleColor="{{titleColor}}"></diynav>
+<view class="box">
+  <block wx:for="{{lister}}" wx:key="this">
+    <view class="nav">
+      <view class="time">{{item.placeorderTime}}</view>
+      <view class="more" bindtap="navdetail" data-id="{{item._id}}">详情</view>
+      <view class="content">{{item.orderCourse}}</view>
+      <view class="address" style="width: 97%;">地址:{{item.orderAddress}}</view>
+      <view class="price" >价格:{{item.orderPrice}}元</view>
+      <view class="gender">客户性别:{{item.clientGender}}</view>
+      <view class="state" >订单状态:{{item.makeSure[item.makeSure.length-1]}}</view>
+    </view>
+  </block>
+</view>

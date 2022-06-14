@@ -1,0 +1,13 @@
+<diynav isShow="{{isShow}}" navTitle="{{navTitle}}" backgroundColor="{{backgroundColor}}" isWhite="{{isWhite}}" pageNum="1" titleColor="{{titleColor}}"></diynav>
+<view class='box' style='margin-top: {{height}}px'>
+  <van-row gutter="30">
+    <block wx:for="{{list}}" wx:key="this">
+    <van-col span="6">
+      <view class="one" bindtap="mall" id="{{item.name}}">
+        <view class="iconfont {{item.img}}" id="tubiao"></view>
+      </view>
+      <view class="name">{{item.name}}</view>
+    </van-col>
+    </block>
+  </van-row>
+</view>
